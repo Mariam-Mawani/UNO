@@ -53,3 +53,7 @@ def draw_cards(cardnumber):
     for x in range(cardnumber):
         cardsdrawn.append(unodeck.pop(0))
     return cardsdrawn
+
+
+# Display player hands
+def hand(player, playerhand):
