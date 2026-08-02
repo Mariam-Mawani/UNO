@@ -47,6 +47,9 @@ def deck_of_cards():
     return deck
 
 
+# Draw cards from deck
 def draw_cards(cardnumber):
     cardsdrawn = []
-    
+    for x in range(cardnumber):
+        cardsdrawn.append(unodeck.pop(0))
+    return cardsdrawn
