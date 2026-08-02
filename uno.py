@@ -45,3 +45,8 @@ def deck_of_cards():
     for i in range(4):
         deck += wild_cards
     return deck
+
+
+def draw_cards(cardnumber):
+    cardsdrawn = []
+    
