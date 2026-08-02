@@ -41,4 +41,7 @@ def deck_of_cards():
                 cardVal = "{} {}".format(colour, value)
                 deck.append(cardVal)
 
-                
+    # Add wild cards
+    for i in range(4):
+        deck += wild_cards
+    return deck
