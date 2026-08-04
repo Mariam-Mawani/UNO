@@ -1,3 +1,5 @@
+import random
+
 print("----------------------------------------------------------------------------------------------------------------------------")
 print("")
 print("Welcome to: ")
@@ -78,4 +80,9 @@ def playchoice(colour, value, hand):
             return True
     return False
 
-    
+
+# setup game & shuffle the decck
+unodeck = deck_of_cards()
+random.shuffle(unodeck)
+discard = []
+print(unodeck)
