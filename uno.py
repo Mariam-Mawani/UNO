@@ -69,11 +69,13 @@ def hand(player, playerhand):
     print("")
 
 
-    # check choice of cards to play
-    def playchoice(colour, value, hand):
-        for card in hand:
-            if "wild" in card:  # Wild cards can always be played
-                return True
-            elif colour in card or value in card:
-                return True
-        return False
+# check choice of cards to play
+def playchoice(colour, value, hand):
+    for card in hand:
+        if "wild" in card:  # Wild cards can always be played
+            return True
+        elif colour in card or value in card:
+            return True
+    return False
+
+    
