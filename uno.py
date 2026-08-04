@@ -57,3 +57,16 @@ def draw_cards(cardnumber):
 
 # Display player hands
 def hand(player, playerhand):
+    print("----------------------------------------")
+    print("Player {}".format(player + 1))
+    print("Your hand is: ")
+    print("----------------------------------------")
+
+    i = 1
+    for card in playerhand:
+        print("{}) {}".format(i, card))
+        i += 1
+    print("")
+
+
+    # check choice of cards to play
