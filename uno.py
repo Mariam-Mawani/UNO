@@ -117,3 +117,6 @@ while playing:
         print("The top card, on the discard pile is: {}".format(discard[-1]))
 
         # check existing playable cards
+        if play_choice(playcolour, cardVal, current_hand):
+            cardchosen = int(input("Which card do you choose to play? "))
+            chosen_card = current_hand[chosen_card]
