@@ -105,3 +105,15 @@ if playcolour != "wild":
 else:
     cardVal = "Any"
 print(f"\nStarting card: {discard[-1]}")    # show card(discard)
+
+
+# main game loop
+while playing:
+    current_player = playturn
+    current_hand = players[current_player]
+
+    if current_player == 0:
+        hand(current_player, current_hand)  # player 1 turn
+        print("The top card, on the discard pile is: {}".format(discard[-1]))
+
+        # check existing playable cards
