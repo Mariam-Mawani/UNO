@@ -93,3 +93,11 @@ players = [draw_cards(7), draw_cards(7)]
 playturn = 0
 playdirection = 1
 playing = True
+
+
+# account fpr top card, on the discard pile
+discard.append(unodeck.pop(0))
+splitcard = discard[0].split(" ", 1)
+playcolour = splitcard[1]
+
+
