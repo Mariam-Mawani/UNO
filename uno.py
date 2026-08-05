@@ -86,3 +86,10 @@ unodeck = deck_of_cards()
 random.shuffle(unodeck)
 discard = []
 print(unodeck)
+
+
+# play turns and starting cards. player 1 starts
+players = [draw_cards(7), draw_cards(7)]
+playturn = 0
+playdirection = 1
+playing = True
