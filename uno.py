@@ -88,16 +88,20 @@ discard = []
 print(unodeck)
 
 
-# play turns and starting cards. player 1 starts
+# play turns and starting cards.
 players = [draw_cards(7), draw_cards(7)]
-playturn = 0
+playturn = 0    # player 1 starts
 playdirection = 1
 playing = True
 
 
-# account fpr top card, on the discard pile
+# account for top card, on the discard pile
 discard.append(unodeck.pop(0))
 splitcard = discard[0].split(" ", 1)
 playcolour = splitcard[1]
 
-
+if playcolour != "wild":
+    cardVal = splitcard[1]
+else:
+    cardVal = "Any"
+print(f"\nStarting card: {discard[-1]}")    # show card(discard)
