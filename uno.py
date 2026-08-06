@@ -72,7 +72,7 @@ def hand(player, playerhand):
 
 
 # check choice of cards to play
-def playchoice(colour, value, hand):
+def play_choice(colour, value, hand):
     for card in hand:
         if "wild" in card:  # Wild cards can always be played
             return True
@@ -122,7 +122,7 @@ while playing:
             chosen_card = current_hand[chosen_card]
 
             # validate card
-            while not playchoice(playcolour, cardVal, [chosen_card]):   # check how many cards they have after each play
+            while not play_choice(playcolour, cardVal, [chosen_card]):   # check how many cards they have after each play
                 cardchosen = int(input("Invalis card, please choose again. ")) - 1
                 chosen_card = current_hand[cardchosen]
             print("You played: {}".format(chosen_card))
@@ -132,3 +132,9 @@ while playing:
              print("No playable cards. Drawing one...")     # automatically draws one card
              current_hand.extend(draw_cards(1))
              pass
+
+    else:
+        # account for computer
+        print("Computer's turn...")
+        playable = [c for c in current_hand if play_choice(playcolour, cardVal, [c])]
+        
