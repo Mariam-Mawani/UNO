@@ -118,5 +118,17 @@ while playing:
 
         # check existing playable cards
         if play_choice(playcolour, cardVal, current_hand):
-            cardchosen = int(input("Which card do you choose to play? "))
+            cardchosen = int(input("Which card do you choose to play? ")) - 1
             chosen_card = current_hand[chosen_card]
+
+            # validate card
+            while not playchoice(playcolour, cardVal, [chosen_card]):   # check how many cards they have after each play
+                cardchosen = int(input("Invalis card, please choose again. ")) - 1
+                chosen_card = current_hand[cardchosen]
+            print("You played: {}".format(chosen_card))
+            discard.append(current_hand.pop(cardchosen))    # remove card from player hand
+
+        else:
+             print("No playable cards. Drawing one...")     # automatically draws one card
+             current_hand.extend(draw_cards(1))
+             pass
