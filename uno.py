@@ -158,4 +158,15 @@ while playing:
         cardVal = splitcard[1]
 
     # handling wild cards
-  
+    if playcolour == "wild":
+        if current_player == 0:
+            print("choose a new colour: ")
+            i = 1
+            for card in ["blue", "red", "yellow", "green"]:
+                print("{} {}".format(i, card))
+                i += 1
+            newcolour = int(input("Colour chosen is: "))
+            playcolour = ["red", "yellow", "green", "blue"][newcolour]
+        else:
+            playcolour = random.choice(["red", "yellow", "green", "blue"])
+            print("Computer changed the colour to: {}".format(playcolour))
