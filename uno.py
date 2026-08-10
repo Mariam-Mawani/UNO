@@ -143,3 +143,7 @@ while playing:
             print("Computer played: {}".format(chosen_card))
             discard.append(chosen_card)
             current_hand.remove(chosen_card)
+        else:
+            print("Computer draws a card.")
+            current_hand.extend(draw_cards(1))
+            pass
