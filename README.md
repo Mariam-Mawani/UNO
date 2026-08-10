@@ -13,6 +13,8 @@ Contents:
 4 Wild cards
 4 Wild Draw Four cards
 
+
+
 Object of game:
 
 Be the first player to get rid of all of your cards in each round and score points for the
@@ -24,6 +26,8 @@ Setup:
 1. The dealer shuffles and deals each player 7 cards.
 2. Place the remainder of the deck facedown to form a DRAW pile.
 3. The top card of the DRAW pile is turned over to begin a DISCARD pile.
+
+
 
 How to play:
 
@@ -39,6 +43,8 @@ How to play:
 - You may also choose NOT to play a playable card from your hand. If so, you must draw
   a card from the DRAW pile.
 
-  How to win:
 
-  The winner is the first person to finish all of their cards.
+
+How to win:
+
+The winner is the first person to finish all of their cards.
