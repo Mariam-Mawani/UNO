@@ -137,4 +137,9 @@ while playing:
         # account for computer
         print("Computer's turn...")
         playable = [c for c in current_hand if play_choice(playcolour, cardVal, [c])]
-        
+
+        if playable:
+            chosen_card = random.choice(playable)
+            print("Computer played: {}".format(chosen_card))
+            discard.append(chosen_card)
+            current_hand.remove(chosen_card)
