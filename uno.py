@@ -158,4 +158,4 @@ while playing:
         cardVal = splitcard[1]
 
     # handling wild cards
-    
+  
