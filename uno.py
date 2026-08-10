@@ -147,3 +147,15 @@ while playing:
             print("Computer draws a card.")
             current_hand.extend(draw_cards(1))
             pass
+
+
+    # how wild cards affect the game
+    splitcard = discard[-1].split(" ", 1)   # last card to be discarded
+    playcolour = splitcard[0]
+    if len(splitcard) == 1:     # only a wild and nothing after it.
+        cardVal = "Any"
+    else:
+        cardVal = splitcard[1]
+
+    # handling wild cards
+    
