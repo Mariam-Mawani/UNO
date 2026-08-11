@@ -195,3 +195,7 @@ while playing:
         else:
             print("Computer wins!!!. Better luck next time.")
         break
+
+    # increase players turn and direction of the game
+    playturn += playdirection
+    playturn % 2    # only 2 players
