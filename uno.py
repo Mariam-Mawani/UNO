@@ -172,4 +172,15 @@ while playing:
             print("Computer changed the colour to: {}".format(playcolour))
 
     # handling action cards
-    
+    if cardVal == "reverse":
+        playdirection *= -1
+    elif cardVal == "skip":
+        playturn += playdirection
+    elif cardVal == "draw 2":
+        print("Player draws 2 cards! ")
+        next_player = (playturn + playdirection) % 2
+        players[next_player].extend(draw_cards(2))
+    elif cardVal == "draw 4":
+        print("Player draws 4 cards! ")
+        next_player = (playturn + playdirection) % 2
+        players[next_player].extend(draw_cards(4))
