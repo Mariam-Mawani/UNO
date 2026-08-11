@@ -32,7 +32,7 @@ Setup:
 How to play:
 
 - On your turn, you must match a card from your hand to the card on the top of the
-  DISCARD pile, either by number, color or symbol (symbols represent Action Cards.
+  DISCARD pile, either by number, color or symbol (symbols represent action cards).
   EXAMPLE: If the card on the DISCARD pile is a red 7, the player must put down a red
   card OR any color 7. Alternatively, the player can put down a Wild card.
   
