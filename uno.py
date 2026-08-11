@@ -157,6 +157,7 @@ while playing:
     else:
         cardVal = splitcard[1]
 
+
     # handling wild cards
     if playcolour == "wild":
         if current_player == 0:
@@ -171,6 +172,7 @@ while playing:
             playcolour = random.choice(["red", "yellow", "green", "blue"])
             print("Computer changed the colour to: {}".format(playcolour))
 
+
     # handling action cards
     if cardVal == "reverse":
         playdirection *= -1
@@ -184,3 +186,12 @@ while playing:
         print("Player draws 4 cards! ")
         next_player = (playturn + playdirection) % 2
         players[next_player].extend(draw_cards(4))
+
+
+    # check winning player
+    if len(current_hand) == 0:
+        if current_player == 0:
+            print("You win!!!. Game over.")
+        else:
+            print("Computer wins!!!. Better luck next time.")
+        break
