@@ -119,7 +119,7 @@ while playing:
         # check existing playable cards
         if play_choice(playcolour, cardVal, current_hand):
             cardchosen = int(input("Which card do you choose to play? ")) - 1
-            chosen_card = current_hand[chosen_card]
+            chosen_card = current_hand[cardchosen]
 
             # validate card
             while not play_choice(playcolour, cardVal, [chosen_card]):   # check how many cards they have after each play
